@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script Name: show_processes.sh
 # Description: Displays a hierarchical list of all currently running processes.
