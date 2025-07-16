@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# This script shows all running processes (including those without a TTY) in a human-readable tree format
+# Shows user and command of all running processes in a simple format
 
-ps -eo user,pid,ppid,%cpu,%mem,tty,cmd --forest
+ps -eo user,comm
+
 
