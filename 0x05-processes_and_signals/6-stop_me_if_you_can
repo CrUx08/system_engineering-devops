@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Script to stop the 4-to_infinity_and_beyond process without using kill or killall
+# Script that silently stops the 4-to_infinity_and_beyond process without using kill or killall
 
 pid=$(pgrep -f 4-to_infinity_and_beyond)
-[ -n "$pid" ] && echo "Stopping PID $pid" && exec </dev/null >/dev/null 2>&1 && ps -p "$pid" > /dev/null && perl -e "kill 9, $pid"
+[ -n "$pid" ] && perl -e "kill 9, $pid"
 
