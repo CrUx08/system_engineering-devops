@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-# Trap SIGTERM and respond with a message instead of exiting
-trap 'echo "I am invincible!!!"' SIGTERM
+# Handle SIGTERM signal
+trap 'echo "I am invincible!!!"; echo OK' SIGTERM
 
+# Infinite loop with message and sleep
 while true
 do
     echo "To infinity and beyond"
     sleep 2
 done
+
 
