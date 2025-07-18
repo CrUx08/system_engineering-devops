@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
-# Handle SIGTERM signal
-trap 'echo "I am invincible!!!"; echo OK' SIGTERM
+# A Bash script that sends SIGTERM to the 7-highlander process
+trap 'echo "I am invincible!!!"' SIGTERM
 
-# Infinite loop with message and sleep
 while true
 do
     echo "To infinity and beyond"
     sleep 2
 done
-
-
